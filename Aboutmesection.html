@@ -8,7 +8,7 @@
 <style>
     html,
     .main{
-        height:15vh;
+        height:20vh;
         display: grid;
         place-items: center;
     }
@@ -18,23 +18,32 @@
         animation-duration: 5s;
         animation-timing-function: ease-in;
         animation-fill-mode:both;
+        animation-direction: alternate-reverse;
+
     }
 
     @keyframes boxAnimation {
         0%{
             background: rgb(0, 0, 0);
-            height: 100px;
-            width: 0px;
+            height: 250px;
+            width: 640px;
+        }
+        25%{
+            background:rgb(0, 0, 0);
+            height: 0px;
         }
         50%{
             background: rgb(0, 0, 0);
+            height: 200px;
+        }
+        75%{
+            background: rgb(0, 0, 0);
             height: 0px;
-            width: 320px;
         }
         100%{
             background: black;
-            height: 250px;
-            width: 640px;
+            height: 10px;
+            width: 0px;
         }
     }
 </style>
@@ -85,7 +94,7 @@
         Other Online Portfolio!
     </a>
     <br><br><br><br>
-    <a href = "index.html" title="This will take you back to my Overview Section" style="text-align: left; color: coral;">
+    <a href = "myportfolio.html" title="This will take you back to my Overview Section" style="text-align: left; color: coral;">
         < Back
 </a><br>
 </body>
