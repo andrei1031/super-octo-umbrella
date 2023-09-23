@@ -1,0 +1,28 @@
+body{
+    font-family: "Press Start 2p"; text-align: center; 
+}
+h1{
+    font-family: "Press Start 2p"; text-align: center; 
+}
+h2{
+    font-family: "Press Start 2p"; text-align: center; font-size: larger;
+}
+p{
+    font-size: 14pt;
+}
+a{
+    font-family: "Press Start 2p"; text-align: center; font-size: larger;
+}
+sup{
+    font-family: "Press Start 2p"; text-align: center;
+}
+sub{
+    font-family: "Press Start 2p"; text-align: center;
+}
+#image { 
+    width: 300px; 
+    margin: 0 auto;
+}
+#current-image { 
+    width: 70%;
+} 
