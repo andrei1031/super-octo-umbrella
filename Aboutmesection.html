@@ -2,58 +2,20 @@
 <html lang="en">
 <head>
     <title>My Personal Information</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myportfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <header style="background-color: rgb(130, 99, 99); padding: 10px; width: 90cap;">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <header style="background-color: rgb(130, 99, 99); padding: 10px; width: 100cqw;">
         <ul style="list-style-type:none;">
-            <li style="text-align: center"> <a style="margin: auto; color: deeppink;" href="index.html">Home</a>  <a style="margin: auto; color: #ffe586;" href="Aboutmesection.html">About me</a>
+            <li style="text-align: center"> <a style="margin: auto; color: deeppink;" href="myportfolio1(Saldivar).html">Home</a>  <a style="margin: auto; color: #ffe586;" href="Aboutmesection.html">About me</a>
             <a style="margin: auto; color: rgb(220, 92, 37)"href="AchievementsInIT.html">Achievements In IT</a>  <a style="margin: auto; color: #2f2fa2;" href="AchievementsInAMT.html">Achievements In AMT</a></li>
         </ul>
         </header>
 </head>
-<style>
-    html,
-    .main{
-        height:20vh;
-        display: grid;
-        place-items: center;
-    }
-    .main .box{
-        background: rgb(0, 0, 0);
-        animation-name: boxAnimation;
-        animation-duration: 5s;
-        animation-timing-function: ease-in;
-        animation-fill-mode:both;
-        animation-direction: alternate-reverse;
-
-    }
-
-    @keyframes boxAnimation {
-        0%{
-            background: rgb(0, 0, 0);
-            height: 250px;
-            width: 640px;
-        }
-        25%{
-            background:rgb(0, 0, 0);
-            height: 0px;
-        }
-        50%{
-            background: rgb(0, 0, 0);
-            height: 200px;
-        }
-        75%{
-            background: rgb(0, 0, 0);
-            height: 0px;
-        }
-        100%{
-            background: black;
-            height: 10px;
-            width: 0px;
-        }
-    }
-</style>
-<body style="background-color: rgb(0, 0, 0);">
+<body>
 <div class="main">
     <div class="box">
         <p style="font-size: 350%; color: bisque;">Personal<br>Information<br></p>
@@ -66,7 +28,7 @@
         <img id="current-image" src="images/image2.png" alt="My Graduation Day" title="My Graduation Day">
     </div>
     <h2 style="color: goldenrod;">
-        Name: Reuben Andrei Saldivar<br><br>Age: 21<br><br>Contact Number: 09761621066<br><br>Address: Wharton Bldg, Bareng Drive, 
+        Name: Reuben Andrei Saldivar<br><br>Age: 21<br><br>Address: Wharton Bldg, Bareng Drive, 
         Bakakeng Sur<br><br>Gender: Male<br><br>Status: Single<br><br>Birthdate: Oct 30, 2001<br><br>Birthplace: Manila
     <br><br>Religion: Catholic<br><br><br></h2>
     <h2 style="color: papayawhip;">
@@ -75,8 +37,14 @@
     <h2 style="color: palegreen;">
     Interest:<br><br>Taking a Photo or Video of Something<br><br>Article about Apocalypse or Alien<br><br><br>Goal:<br><br>Airline Pilot<br><br><br></h2>
     <h2 style="color:paleturquoise;">
-    Aspiration:<br><br>I've always dream of becoming an Airline Pilot someday.
+    Aspiration:<br><br>I've always dream of becoming an Airline Pilot someday.<br><br><br>
     </h2>
+    <h2 style="color:plum">
+    Work Experience:<br><br>On the Job Training as Aircraft Mechanic - Aviation Integrity<br>(Jan 11, 2023 - July 15, 2023).
+    </h2>
+    <br>
+    <br>
+    <h1 style="color: palevioletred; text-align: center; font-size: 20px;">Contacts<br><br>Mobile Number: 09761621066</h1>
     <p style="color: lightcoral">---------------------------------------------------</p>
     <p style="color: blue">Gmail: Andrei Santos</p>
     <a href = "mailto:andreisantossaldivar@gmail.com" title="Email Me" style="color: red;">
@@ -111,14 +79,181 @@
     style="color: rgb(65, 236, 255);">
         Other Online Portfolio!
     </a>
-    <br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <hr style="width:50cqmax; text-align:center; color:lightcoral">
+        <h2 style="color: palevioletred;">Achievements and Awards</h2>
+        <div style="color: palegreen;" class="gallery">
+        <a target="_self" href="images/elem diploma.jpg">
+        <img src="images/elem diploma.jpg" alt="Elementary" width="600" height="400">
+        </a>
+        <div style="font-size: 15px;" class="desc">This is my Elementary diploma</div>
+        </div> 
+        <div style="color: palegreen;" class="gallery">
+        <a target="_self" href="images/grade 8.jpg">
+        <img src="images/grade 8.jpg" alt="JHS" width="600" height="400">
+        </a>
+        <div style="font-size: 15px;" class="desc">Top 5 in Grade 8</div>
+        </div>
+            
+        <div style="color: palegreen;" class="gallery">
+        <a target="_self" href="images/medal.jpg">
+        <img src="images/medal.jpg" alt="First app" width="600" height="400">
+        </a>
+        <div style="font-size: 15px;" class="desc">Honor with Medal in my SHS Graduation</div>
+        </div>
+        
+        <div style="color: palegreen;" class="gallery">
+        <a target="_self" href="images/grade 11.jpg">
+        <img src="images/grade 11.jpg" alt="Grade 12 Diploma" width="600" height="400">
+        </a>
+        <div style="font-size: 15px;" class="desc">My Grade 12 Diploma</div>
+        </div>
+
+        <hr style="width:50cqmax; text-align:center; color: lightcoral;">
+        <h2 style="color: palevioletred;">Code Sample</h2>
+        <div style="color: palegreen;" class="gallery">
+        <a target="_self" href="images/Blocks.png">
+        <img src="images/Blocks.png" alt="Blocks" width="600" height="400">
+        </a>
+        <div style="font-size: 15px;" class="desc">This is how i made my first ever App only for Android</div>
+        </div> 
+
+        <div style="color: palegreen;" class="gallery">
+        <a target="_self" href="images/Calculator.jpg">
+        <img src="images/Calculator.jpg" alt="Calculator" width="600" height="400">
+        </a>
+        <div style="font-size: 15px;" class="desc">Making of calculator using of User Interfaces in Java</div>
+        </div>
+        
+        <div style="color: palegreen;" class="gallery">
+        <a target="_self" href="images/FirstEverApp.jpg">
+        <img src="images/FirstEverApp.jpg" alt="First app" width="600" height="400">
+        </a>
+        <div style="font-size: 15px;" class="desc">First ever app using MIT</div>
+        </div>
+        
+        <div style="color: palegreen;" class="gallery">
+        <a target="_self" href="https://youtu.be/DzLbzQncIXw">
+        <img src="images/Pic.png" alt="First Ever Animation(Lose One's Heart)" width="600" height="400">
+        </a>
+        <div style="font-size: 15px;" class="desc">First Ever Animation short film</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="width:50cqmax; text-align:center; color: lightcoral;">
+        <div>
+        <h1 style="color: palevioletred; text-align: center;">Certificate</h1>
+        <br><br><br>
+        <img id="current-image" src="images/cert.jpg" alt="Image 1" title="On The Job Training" style="width: 200px;">
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr style="width:50cqmax; text-align:center;">
+        <br>
+        <br>
+        <h1 style="color: palevioletred; text-align: center;">Multimedia</h1>
+        <video width=1180px" height="720px" controls>
+            <source src="files/Traditional Animation (Lose one's heart).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    <h1>""</h1>
+    <br>
+    <br>
+    <h1  style="text-align: center; color: palevioletred;">Testimonials</h1>
+    <div class="container">
+    <img src="images/CJ.jpg" alt="Mortal Kombat Par!" style="width:90px">
+    <p style="color: dodgerblue;"><span>Claysio Ricardo.</span> SUKI at Hotel Veniz/Sogo.</p>
+    <p style="color: dodgerblue;">Gusto ni Claysio Happy ka.</p>
+    </div>
+
+    <div class="container">
+    <img src="images/den.jpg" alt="No sht!" style="width:90px">
+    <p style="color: blueviolet;"><span>Denmark Galima.</span> CEO at Apple and Videographer/Photographer.</p>
+    <p style="color: blueviolet;">Director ng Hadassa Adventure Part 1 and 2.</p>
+    </div>
+
+    <div class="container">
+        <img src="images/driel.jpg" alt="Sepitot" style="width:90px">
+        <p style="color: rgb(134, 134, 235);"><span>Adriel John Langa.</span> BEST in Mobile Legend Major in Trashtalking.</p>
+        <p style="color: rgb(134, 134, 235);">trashtalk na lang dumadamage.</p>
+        </div>
+    <br>
+    <br>
+<p style="color: #8d8741">---------------------------------------------------</p>
+<h2 style="color: #11e715;">Blog/Article</h2>
+<div className = "download_buttton">
+    <a style="color: lightgreen;" href="files/Final-Paper-For-Pr2.pdf" title="This will download my Article" className = "btn-outline" download>--Download our Article about attendance system--</a>
+</div>
     <div className = "download_buttton">
         <a style="color: lightgreen;" href="files/Saldivar, Reuben Andrei(Resume).pdf" title="This will download my Resume" className = "btn-outline" download>--Download my Resume--</a>
     </div>
+    <h3 id="DarkModetext">Dark Mode is ON</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+
+    </script>
     <br><br><br><br>
-    <a href = "index.html" title="This will take you back to my Overview Section" style="text-align: left; color: coral;">
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+
+        <br>
+        <br>
+        <br>
+    <a href = "myportfolio1(Saldivar).html" title="This will take you back to my Overview Section" style="text-align: left; color: coral;">
         < Back
     </a>
+
+
 <br>
 <br>
 <br>

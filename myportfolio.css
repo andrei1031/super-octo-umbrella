@@ -1,23 +1,26 @@
 body{
-    font-family: "Press Start 2p"; text-align: center; 
+    font-family: "Press Start 2p"; text-align: center; font-size:1vw; background-color: black; 
 }
 h1{
-    font-family: "Press Start 2p"; text-align: center; 
+    font-family: "Press Start 2p"; text-align: center; font-size:1vw; 
 }
 h2{
-    font-family: "Press Start 2p"; text-align: center; font-size: larger;
+    font-family: "Press Start 2p"; text-align: center; font-size:1vw;
 }
 p{
-    font-size: 14pt;
+    font-family: "Press Start 2p"; text-align:center; font-size:1vw;
 }
 a{
-    font-family: "Press Start 2p"; text-align: center; font-size: larger;
+    font-family: "Press Start 2p"; text-align: center; font-size:1vw;;
 }
 sup{
-    font-family: "Press Start 2p"; text-align: center;
+    font-family: "Press Start 2p"; text-align: center; font-size:1vw;
 }
 sub{
-    font-family: "Press Start 2p"; text-align: center;
+    font-family: "Press Start 2p"; text-align: center; font-size:1vw;
+}
+img{
+    max-width:50%;height:auto;
 }
 #image { 
     width: 300px; 
@@ -26,3 +29,143 @@ sub{
 #current-image { 
     width: 70%;
 } 
+
+div.gallery {
+    margin: 80px;
+    border: 10px solid paleturquoise;
+    float: right;
+    width: 185px;
+    }
+    
+div.gallery:hover {
+    border: 1px solid palegreen;
+    }
+    
+div.gallery img {
+    width: 90%;
+    height: auto;
+    }
+    
+div.desc {
+    padding: 25px;
+    text-align:center
+    }
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+    }
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+.container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    }
+
+.container span {
+    font-family: "Press Start 2p"; text-align: center; font-size:1vw;
+    margin-right: 15px;
+    }
+
+@media (max-width: 100px) {
+    .container {
+        text-align: center;
+    }
+.container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+    }
+    html,
+    .main{
+        height:15vh;
+        display: grid;
+        place-items: center;
+    }
+    .main .box{
+        background: rgb(0, 0, 0);
+        animation-name: boxAnimation;
+        animation-duration: 5s;
+        animation-timing-function:ease-out;
+        animation-fill-mode:both;
+        animation-direction:alternate;
+    }
+
+    @keyframes boxAnimation {
+        0%{
+            background: rgb(0, 0, 0);
+            height: 250px;
+            width: 640px;
+        }
+        25%{
+            background:rgb(0, 0, 0);
+            height: 200px;
+        }
+        50%{
+            background: rgb(0, 0, 0);
+            height: 100px;
+        }
+        75%{
+            background: rgb(0, 0, 0);
+            height: 10px;
+        }
+        100%{
+            background: black;
+            height: 0px;
+            width: 0px;
+        }
+    }
+    .left, .right {
+        float: left;
+        width: 20%; /* The width is 20%, by default */
+    }
+    .main {
+        float: left;
+        width: 60%; /* The width is 60%, by default */
+    }
+      /* Use a media query to add a breakpoint at 800px: */
+    @media screen and (max-width: 600px) {
+        .left, .main, .right {
+          width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        }
+    }
+    .dark-mode {
+        background-color: black;
+        color: white;
+        
+    }
+
+    .light-mode {
+        background-color: white;
+        color: black;
+    }
+    #map {
+        height: 400px;
+    }
+    .rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        text-align: center;
+        position: relative;
+    }
+
+    .rating input {
+        display: none;
+    }
+
+    .rating label {
+        display: inline-block;
+        padding: 5px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #ccc;
+    }

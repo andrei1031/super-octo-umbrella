@@ -4,55 +4,14 @@
     <title>Information Technology</title>
     <link rel="stylesheet" href="myportfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <header style="background-color: rgb(130, 99, 99); padding: 10px; width: 90cap;">
+    <header style="background-color: rgb(130, 99, 99); padding: 10px; width: 100cqw;">
         <ul style="list-style-type:none;">
-            <li style="text-align: center"> <a style="margin: auto; color: deeppink;" href="index.html">Home</a>  <a style="margin: auto; color: #ffe586;" href="Aboutmesection.html">About me</a>
+            <li style="text-align: center"> <a style="margin: auto; color: deeppink;" href="myportfolio1(Saldivar).html">Home</a>  <a style="margin: auto; color: #ffe586;" href="Aboutmesection.html">About me</a>
             <a style="margin: auto; color: rgb(220, 92, 37)"href="AchievementsInIT.html">Achievements In IT</a>  <a style="margin: auto; color: #2f2fa2;" href="AchievementsInAMT.html">Achievements In AMT</a></li>
         </ul>
         </header>
 </head>
-<style>
-    html,
-    .main{
-        height:15vh;
-        display: grid;
-        place-items: center;
-    }
-    .main .box{
-        background: rgb(0, 0, 0);
-        animation-name: boxAnimation;
-        animation-duration: 5s;
-        animation-timing-function: ease-in;
-        animation-fill-mode:both;
-        animation-direction:alternate-reverse;
-    }
-
-    @keyframes boxAnimation {
-        0%{
-            background: rgb(0, 0, 0);
-            height: 250px;
-            width: 640px;
-        }
-        25%{
-            background:rgb(0, 0, 0);
-            height: 200px;
-        }
-        50%{
-            background: rgb(0, 0, 0);
-            height: 100px;
-        }
-        75%{
-            background: rgb(0, 0, 0);
-            height: 10px;
-        }
-        100%{
-            background: black;
-            height: 0px;
-            width: 0px;
-        }
-    }
-</style>
-<body style="background-color: rgb(0, 0, 0);">
+<body>
 <div class="main">
     <div class="box">
         <p style="font-size: 400%; color: rgb(220, 92, 37);">Computer<br>Information<br>Technology</p>
@@ -85,8 +44,28 @@
         </p>
         <p style="color: magenta;">---------------------------------------------------</p>
     </dl>
-
-    <a href = "index.html" title="This will take you back to my Overview Section" style="color: blue;">
+    
+    <h3 id="DarkModetext">Dark Mode is ON</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <a href = "myportfolio1(Saldivar).html" title="This will take you back to my Overview Section" style="color: blue;">
         < Back
     </a><br>
 </body>

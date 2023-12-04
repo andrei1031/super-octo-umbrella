@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="myportfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<header style="background-color: rgb(130, 99, 99); padding: 10px; width: 100cqw;">
+<ul style="list-style-type:none;">
+    <li style="text-align: center"> <a style="margin: auto; color: deeppink;" href="index.html">Home</a>  <a style="margin: auto; color: #ffe586;" href="Aboutmesection.html">About me</a>
+    <a style="margin: auto; color: rgb(220, 92, 37)"href="AchievementsInIT.html">Achievements In IT</a>  <a style="margin: auto; color: #2f2fa2;" href="AchievementsInAMT.html">Achievements In AMT</a></li>
+</ul>
+</header>
+<style>
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #f90;
+}
+
+.rating input:checked ~ label:hover,
+.rating label:hover ~ input:checked ~ label,
+.rating input:checked ~ label:hover ~ label {
+    color: #ccc;
+}
+</style>
+</head>
+<body>
+<div class="main">
+    <div class="box">
+        <p style="font-size: 400%; color:  rgb(235, 200, 165);">Welcome<br>to<br>my<br>Online<br>Portfolio</p>
+    </div>
+</div>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <header>
+        <img id="current-image" src="images/image1.png" alt="Image 1" title="My Graduation Day" style="width: 200px;">
+        <h3>
+        <big style="color: #11e715;">Programer/Aircraft Technician</big>
+        </h3>
+        <h4>
+            <big style="color: #11e715;">"win through your actions, never through argument"</big>
+        </h4>
+        </header>
+        <br>
+        <h2 style="color: deeppink">
+        Hi Everyone!<br>My name is Reuben Andrei S. Saldivar.<br>And you can call me <u><big>"(Andrei)"</big></u> for short or just <br>
+        <u><big>"(Drei)"</big></u> if you're too lazy.<br> 
+        And I'm studying at University of the Cordilleras<br>BSIT Major in Web technology in Baguio City! 
+        </h2>
+        <br>
+        <br>
+        <p style="color: #8d8741;">---------------------------------------------------</p>
+        <h2 style="color: deeppink"> This Online Portfolio<br>is for everyone who wants to see my achievements<br>
+        as IT student and AMT student<br> 
+        just click any button at the top portion of this website and the pictures of my drawings, sample animations, and picture of my app in at the bottom of this message</h2>
+        
+        <h3 id="DarkModetext">Dark Mode is ON</h3>
+        <button onclick="darkMode()">Darkmode</button>
+        <button onclick="lightMode()">LightMode</button>
+        <script>
+            function darkMode() {
+                let element = document.body;
+                let content = document.getElementById("DarkModetext");
+                element.className = "dark-mode";
+                content.innerText = "Dark Mode is ON";
+            }
+            function lightMode() {
+                let element = document.body;
+                let content = document.getElementById("DarkModetext");
+                element.className = "light-mode";
+                content.innerText = "Dark Mode is OFF";
+            }
+        </script>
+        <form id="surveyForm">
+        <label for="name" style="color: palevioletred;">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" style="color: palevioletred;">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="feedback" style="color: palevioletred;">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="2" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script defer src="survey.js"></script>
+<br>
+<br>
+<br>
+    <form id="commentForm">
+        <label for="name" style="color: paleturquoise;">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="comment" style="color: paleturquoise">Comment:</label>
+        <textarea id="comment" name="comment" rows="2" required></textarea>
+
+        <input type="submit" value="Submit Comment">
+    </form>
+    <script defer src="comment.js"></script>
+    <br>
+    <br>
+    <br>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">5 stars</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">4 stars</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">3 stars</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">2 stars</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">1 star</label>
+    </div>
+    <br>
+    <br>
+    <br>
+</body>
+<br>
+<small><sub style="color: rgb(235, 200, 165);">©2023 OnlinePortfolio.<br>All rights reserved</sub></small>
+</html>
